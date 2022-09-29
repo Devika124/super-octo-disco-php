@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+
+<?php
+$fname= $lname= $prn no= $email= $contact= $gender= $nationality= $city= $state= $grad= $course= $yearofstudy= " ";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $fname = test_input($_POST["First Name"]);
+  $lname = test_input($_POST["Last Name"]);
+  $prn no = test_input($_POST["PRN NO."]);
+  $email = test_input($_POST["Email"]);
+  $contact = test_input($_POST["Contact"]);
+  $gender = test_input($_POST["Gender"]);
+  $nationality = test_input($_POST["Nationality"]);
+  $city = test_input($_POST["City"]);
+  $state = test_input($_POST["State"]);
+  $grad = test_input($_POST["Undergraduate/Postgraduate"]);
+  $yearofstudy = test_input($_POST["Year of study"]);
+}
