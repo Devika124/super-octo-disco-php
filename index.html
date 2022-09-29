@@ -45,10 +45,24 @@ function test_input($data) {
   <input type="radio" name="gender" value="male">Male
   <input type="radio" name="gender" value="other">Other
   <br><br>
-  Nationality: <input type="text" name="nationality">
+ 
+  
+  <label for="nationality">Nationality: </label>
+  <select name="nationality" >
+	<option value="">--- Choose a country ---</option>
+	<option value="India"></option>
+	<option value="United States of America"></option>
+	<option value="United Kingdom"></option>
+  <option value="United Arab Emirates"></option>
+  <option value="Japan"></option>
+  <option value="Kingdom of Saudi Arabia"></option>
+</select>
+  <!--Nationality: <input type="" name="nationality">-->
   City: <input type="text" name="city">
   State: <input type="text" name="state">
   
   <input type="submit" name="submit" value="Submit">  
 </form>
 
+  
+ 
